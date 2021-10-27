@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<title>Formulário</title>
+</head>
+<body>
+	<div id="formulario">
+		<div class="pessoaisdados">
+		<form class="cadastro" name="cadastro" action="recebedados.php" method="POST">
+			<fieldset id="pessoaisdados">
+				<legend>Dados Pessoais</legend>
+					
+					<div class="campo">
+						<label for="nome">Nome completo:</label> <!-- Obrigatorio -->
+						<input type="text" name="nome" id="nome" autofocus placeholder=" Digite... *" required>
+					</div>
+					<div class="campo">	
+						<label for="genero">Gênero:</label> <!-- [é possível selecionar apenas um dos valores] -->
+						<select name="genero" id="genero">	
+							<option	value="1" selected disabled>Selecione</option>
+							<option	value="2">Feminino</option>		
+							<option	value="3">Masculino</option>		
+							<option	value="4">Outro</option>
+							<option	value="5">Prefiro não responder</option>		
+						</select>
+					</div>		
+
+					
+					<!-- [valores: "Feminino" , "Masculino", "Outro" e "Prefiro não responder"] -->
+					<div class="campo">
+						<label for="data">Data de nascimento: </label>					
+					<!--[possibilidade de seleção de uma data] -->
+					<input type="date" name="date" id="data">
+					</div>
+
+
+					<div class="campo">
+						<label for="email">E-mail:</label>
+						<!--[campo para e-mail]
+						[campo obrigatório]-->
+						<input type="email" name="E-mail" id="email" placeholder=" exemplo@gmail.com *" required="">
+					</div>	
+					<div class="campo">
+						<label for="site">URL site pessoal:</label>					
+						<!--[campo para URL] -->
+						<input type="url" name="url" id="site" placeholder=" https://exemplo.com">
+					</div>
+					<div class="endereco">	
+						<label for="endereco">Endereço:</label>
+						<!--[campo obrigatório] -->
+						<input type="text" name="rua" id="endereco" placeholder=" (Rua, número e complemento)*" required="">
+						
+
+					</div>	
+
+					<div class="campo">
+						<label for="cidade">Cidade</label>
+						<!--[valores: "Alvorada", "Canoas", "Esteio", "Gravataí", "Novo Hamburgo", "Passo Fundo", "Pelotas",
+						"Porto Alegre", "São Leopoldo"] -->
+							<select name="cidade" id="cidade">	
+									<option	value="1" selected disabled>Selecione</option>
+									<option	value="2">Alvorada</option>		
+									<option	value="3">Canoas</option>		
+									<option	value="4">Esteio</option>
+									<option	value="5">Gravatai</option>	
+									<option	value="6">Novo Hamburgo</option>		
+									<option	value="7">Passo Fundo</option>		
+									<option	value="8">Pelotas</option>
+									<option	value="9">Porto Alegre</option>	
+									<option	value="10">São Leopoldo</option>	
+								</select>
+					</div>
+					<div class="campo">
+						<label for="telefone">Telefone:</label>
+						<!--[campo para receber telefone] -->
+						<input type="tel" name="telefone" id="telefone" placeholder=" (DDD)9000-0000">
+					</div>	
+
+				
+			</fieldset>
+		</div>
+		
+		</div>
+			
+				<fieldset>
+					<legend>Dados profissionais</legend>
+						<div class="campo">
+							<label class="titulo">Áreas de atuação</label>
+							<ul>
+							<!--
+							[valores: "Design", "Desenvolvimento Front-end", "Desenvolvimento Back-end", "Engenharia de
+							Software", "Banco de Dados", "Análise de Testes", "Análise de Negócios", "Manutenção"] -->
+							<li>
+								<input name="cb1" id="cb1" type="checkbox" value="1"/>	
+									<label for="cb1">Design</label>	
+							</li>
+											
+							<li>
+								<input name="cb2" id="cb2" type="checkbox" value="2"/>
+									<label for="cb2">Desenvovimento Front-end</label>
+							</li>
+							<li>		
+								<input name="cb3" id="cb3" type="checkbox" value="3"/>	
+									<label for="cb3">Desenvolvimento Back-end</label>
+							</li>			
+							<li>				
+								<input name="cb4" id="cb4" type="checkbox" value="4"/>
+									<label for="cb4">Engenharia de Software</label>
+							</li>
+							<li>		
+								<input name="cb5" id="cb5" type="checkbox" value="5"/>	
+									<label for="cb5">Banco de Dados</label>	
+							</li>		
+							<li>				
+								<input name="cb6" id="cb6" type="checkbox" value="6"/>
+									<label for="cb6">Análise de Testes</label>
+							</li>	
+							<li>	
+								<input name="cb7" id="cb7" type="checkbox" value="7"/>	
+									<label for="cb7">Análise de Negócios</label>
+							</li>			
+							<li>				
+								<input name="cb8" id="cb8" type="checkbox" value="8"/>
+									<label for="cb8">Manutenção</label>
+							</li>		
+								</ul>
+						</div>
+									
+						<div class="campo">	
+							<label for="formacao" class="titulo">Formação: </label> <!--[datalist]
+							[usar um elemento que permita filtrar um valor em um conjunto pré-definido de valores]
+							[valores: "Ensino Fundamental", "Ensino Médio", "Ensino Superior", "Especialização", "Mestrado", 
+							"Doutorado"] -->
+							<input	list="formacao1" name="formacao" id="formacao">	
+								<datalist id="formacao1">	
+									<option	value="Ensino Fundamental"></option>	
+									<option	value="Ensino Médio"></option>	
+									<option	value="Ensino Superior"></option>	
+									<option	value="Especialização">	</option>
+									<option	value="Metrado"></option>
+									<option value="Doutorado">	</option>
+								</datalist>	
+						</div>
+						<div class="caixatexto">
+							<label for="historico" class="titulo">Breve histórico profissional:</label>
+							<!--[usar um elemento que permita um espaço maior para entrada de texto]-->
+							<textarea name="tx" cols="40" rows="5" id="historico" required></textarea>
+						</div>	
+						<div class="campo">
+							<label for="arquivo" class="titulo">Upload do currículo vitae:</label>
+							<!--[possibilidade de selecionar um arquivo]-->
+							<input type="file" name="arquivo" id="arquivo">
+						</div>
+						<div class="campo">	
+							<laber for="dispH" class="titulo">Disponibilidade de horas semanais:</laber>
+							<!--[usar um elemento para seleção de valores com as devidas validações]
+							[valores: "10", "20", "30", "40"]-->
+							<select name="dispH" id="dispH">	
+									<option	value="1" selected disabled>Selecione</option>
+									<option	value="2">10h</option>		
+									<option	value="3">20h</option>		
+									<option	value="4">30h</option>
+									<option	value="4">40h</option>
+										
+								</select>
+						</div>		
+				</fieldset>			
+			
+
+		
+			<fieldset>
+				<legend class="titulo">Agendamento de entrevista</legend>
+				<div class="campo">
+						<label for="data2" class="titulo">Data:</label>
+						<!--[possibilidade de seleção de uma data] 
+						[campo obrigatório] -->
+						<input type="date" name="data2" id="data2" required>
+					</div>	
+					<div class="campo">	
+						<label for="hora" class="titulo">Horário:</label>
+						<!--[possibilidade de seleção de um horário]
+						[campo obrigatório] --> 
+						<input type="time" name="hora" id="hora" required>
+					</div>	
+			</fieldset>
+			<div id="botao">
+
+			<input type="submit" name="enviar">
+		</div>
+		</form>
+	</div>
+		
+
+	</div>
+
+</body>
+</html>

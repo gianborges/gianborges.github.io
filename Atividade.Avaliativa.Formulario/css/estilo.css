@@ -1,0 +1,77 @@
+*{
+	margin: 0;
+	padding: 0;}
+fieldset {
+	background-color: #B01FFF;
+	border-radius: 5px;
+	width: 400px;
+	margin-bottom: 10px;
+}
+legend {
+	text-align: center;
+	margin-bottom: 20px;
+	color: #C4F505;
+	font-weight: bold;
+	
+	text-shadow: 0.1em 0.1em 0.2em black
+}
+body {
+	background-color: #6E02A8;
+	font-family: sans-serif;
+	margin-left: 36%;
+	margin-top: 2%;
+	justify-content: center;
+}
+input, select, textarea, button {
+	border-radius: 5px;
+}
+
+#pessoaisdados{
+	font-weight: bold;
+}
+.campo, label{
+	margin-left: 10px;
+	margin-bottom: 5px;
+	
+}
+.caixatexto label, historico { margin-bottom: 2px;
+	display: block;
+	margin-left: 100px;
+	margin-top: 10px;
+
+}
+.caixatexto textarea{ display: block;
+	margin-left: 45px;
+	margin-bottom: 20px;
+}
+.endereco, label{
+	margin-left: 10px;
+}
+.endereco input{
+	display:inline-block;
+	margin-bottom: 2px;
+	margin-top: 1px;
+	margin-left: 0px;
+}
+
+#botao input {
+	width: 75px;
+	border-radius: 5;
+	margin-left: 175px;
+	background-color: #B01FFF;
+	color: #C4F505;
+	font-weight: bold;
+	text-shadow: 0.1em 0.1em 0.2em black
+
+}
+#botao :hover{
+	background-color: #A005F5;
+
+}
+.campo ul li {
+	list-style: none;
+	margin-left: 20px;
+	font-weight: none;
+}
+.titulo {font-weight: bold;
+}
