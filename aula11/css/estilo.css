@@ -1,0 +1,131 @@
+/*O seletor *, seleciona cada um dos elementos do documento html*/
+*{ /*Zerar as propriedades de margin e padding de todos os elementos 
+
+   do html, pois assim teremos maior controle sobre o conteúdo da página*/
+	margin: 0;
+	padding: 0;
+}
+/*Selecionar o elemento HTML*/
+html {
+	font-family: Arial, Verdadana,sans-serif;
+	/*Define o tamanho da fonte de texto padrão da página*/
+	font-size: 16px;
+	/*Define a cor de fundo */
+	background-color: #FFF;
+
+}
+#principal {
+	background-color: #c0c0c0;
+	min-width: 600px;
+	max-width: 1200px;
+
+	/*Essa propriedade vai centralizar este elemento*/
+
+    /*0 de espaçamento top e bottom*/
+
+    /*mesmo espaçamento de margin nas laterais - cálculo automático*/
+    margin: 0 auto;
+    align-content: center;
+
+
+}
+/************************/
+
+ /******CABEÇALHO*********/
+
+ /************************/
+ header{
+ 	/* Define a altura */
+ 	height: 50px;
+ 	background-color: #573258;
+ 	text-align: center;
+ }
+ /*Seleciona o elemento H1 que estiver dentro de um elemento HEADER*/
+header h1 {
+	padding: 10px 0;
+	color: #FFF;
+} 
+
+/************************/
+
+ /******MENU NAV*********/
+
+ /************************/
+ nav {
+ 	height: 50px;
+ 	background-color: #DCB6DE;
+
+ }
+ nav ul li {
+ 	display: inline-block;
+ 	/*Define os marcadores*/
+ 	list-style-type: none;
+ 	/*Define um espaçamento à direita de cada item da lista*/
+ 	margin-right: 10px;
+ 	  	/*8px em cima e em baixo e 10px nas laterais*/
+  	padding: 8px 10px;
+  		/*Define a cor de funto */
+  	background-color: #000;
+  	border-radius: 10px;
+  	/*Define uma transição quando o valor da propriedade background-color
+
+   for alterado, levando x segundos para terminar a alteração da cor*/
+  	transition: background-color 0.3s;
+ }
+ /*HOVER-Esse seletor funciona apenas quando o mouse estiver sobre o elemento*/
+
+/*ACTIVE-Esse seletor funciona apenas quando o mouse estiver clicando sobre o elemento*/
+ nav ul li:hover,
+ nav ul li:active {
+ 	background-color: #808080;
+ }
+/*Seleciona os elementos "A" dentro de um elemento "LI" 
+
+que estiverem dentro de um elemento "UL" 
+
+que esteja dentro de um elemenyo "NAV"*/
+ nav ul li a:link,
+  nav ul li a:visited {
+  
+  	/*Define a cor do texto*/
+  	color: #FFF;
+  	text-decoration: none;
+  	/*Define a espessura da fonte do texto*/
+  	font-weight: bold;
+
+ }
+
+ /************************/
+
+/******DESTAQUE**********/
+
+/************************/
+
+#destaque {
+	height: 350px;
+	background-color: #D7CBD7;
+
+}
+#destaque figure {
+	/*Define a largura do container que contem a  imagem*/
+	width: 35%;
+	/*Define o alinhamento do fluxo dos elementos do html.
+
+   Permite que outros containers fiquem um ao lado do outro*/
+   float: left;
+   margin: 25px 20px ;
+   
+}
+
+#destaque figure img {
+	/* Define a Largura da imagem */
+	width: 100%;
+}
+#destaque p {
+	/* Define a Largura da tag P */
+	width: 55%;
+	float: right;
+	margin-top: 25px;
+	margin-right: 15px;
+
+}
