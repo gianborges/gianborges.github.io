@@ -1,0 +1,139 @@
+*{
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	
+	}
+#principal {
+	width: 100%;
+}
+
+header {
+	height: 350px;
+	width: 100%;
+	background-image: url("../img/Banner3.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#mainredes {
+	margin-right: 10px;
+	margin-top: 292px;
+	float: right;
+	display: inline-block;
+	
+
+}
+#mainredes ul li {
+	font-size: 40px; 
+	display: inline-block;
+	list-style: none;
+}
+
+#menu-topo{
+	margin-top: 300px;
+	margin-left: 850px;
+	float: left;
+	display: inline-block;
+
+}
+
+#menu-topo ul li {
+	display: inline-block;
+	background-color: #F2C3A7;
+	padding: 8px 10px;
+	border-radius: 15px;
+	margin-left: 10px;
+
+}
+ #menu-topo ul li a {
+ 	text-decoration: none;
+ 	color: #F23D5E;
+ 	font-weight: bold;
+
+ 	}
+
+#destaque { 
+	margin-top: 5px;
+	width: 100%;
+	border-top: 2px white solid;
+	background-color: #F25C5C;
+}
+#destaque h3 {
+	margin-top: 20px;
+	text-align: center;
+	border-radius: 8px;
+	background-color: pink;
+	width: 50%;
+	border: 1px black solid;
+	color:#261711 ;
+	text-shadow: 1px 1px 2px #F23D5E;
+	font-size: 25px;
+	text-transform: uppercase;
+	margin-left: 350px;
+
+}
+
+/*-------------------------------MEIO DA PÁGINA----------------------------------*/
+
+
+
+#roda{
+	width: 150px;
+	
+	
+}
+
+#roda ul li {
+	margin-top: 50px;
+	font-size: 40px;
+
+
+}
+
+#rodaperedes {
+	border-top: 2px white solid;
+	display: inline-block;
+	width: 100%;
+	background-color: #F2C3A7;
+	
+}
+#rodaperedes ul li { 
+	display: inline-block;
+	list-style: none;
+
+
+}
+
+#rodaperedes h3 {
+	display: inline-block;
+	margin-bottom: 70px;
+	color: #261711;
+	margin-left: ;
+	width: 300px;
+	text-align: center;
+}
+#marcador {
+	display: inline-block;
+	font-size: 40px;
+	color: brown;
+}
+#markend {
+	width: 350px;
+	
+}
+
+
+footer { 
+	border-top: 2px  white solid;
+	width: 100%;
+	background-color: #F25C5C;
+
+}
+footer p {
+	margin-top: 5px;
+	color: #F2C3A7;
+	margin-left: 43%;
+	font-weight: bold;
+}

@@ -4,63 +4,66 @@
 	<meta charset="utf-8">
 	<title>Sweet Pie - Confeitária</title>
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/basesite.css">
 </head>
 <body>
 	<div id="principal">
 		<header>
-			<nav>
+			<nav id="menu-topo">
 					<ul>
 						<li><a href="index.html">HOME</a></li>
 						<li><a href="cards.html">CARDÁPIO</a></li>
-						<li><a href="#">ENCOMENDAS</a></li>
-						<li><a href="#">CONTATO</a></li>
-						
+						<li><a href="encomendas.html">ENCOMENDAS</a></li>						
 					</ul>	
 				</nav>
-				<div id="mainredes">
+				<nav id="mainredes">
 				<ul>
-					<li><a href="#"><img src="img/facebook.png" border="0"></a></li>
-					<li><a href="#"><img src="img/instagram.png" border="0"></a></li>
-					<li><a href="#"><img src="img/whatsapp.png" border="0"></a></li>
+					<li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+					<li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+					<li><a href="api.whatsapp.com/send?phone=5519999999999&text=Texto%20aqui"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
 
 				</ul>
-			</div>
+			</nav>
 
 		</header>
-		<div id="destaque"> 
+		<section id="destaque"> 
 			<h3>Destaque</h3>
-	<main class="cards"> 
-		<section class="cards">
-			<div class="icon">
-				<img src="img/salgados.jpg" alt="">
-			</div>
-			<button>Salgados</button>
-		</section>
-			<section class="cards">
-			<div class="icon">
-				<img src="img/torta.jpg" alt="">
-			</div>	
-			<button>Tortas</button>
-		</section>
-			<section class="cards">
-			<div class="icon">
-				<img src="img/doces.jpg" alt="">
-			</div>
-			<button>Doces</button>
-		</section>
-		</main>
-		</div>					
+			<main class="cards">
+				<figure class="cards">
+					<div class="icon">
+						<img src="img/torta.jpg" alt="Torta">
+					</div>
+					<button><a href="tortas.html">Tortas</a></button>
+				</figure>
+				
+					<figure class="cards">
+					<div class="icon">
+						<img src="img/salgados2.jpg" alt="Salgados">
+					</div>	
+					<button>Salgados</button>
+				</figure>
+					<figure class="cards">
+					<div class="icon">
+						<img src="img/doces2.jpg" alt="Doces">
+					</div>
+					<button>Doces</button>
+				</figure>
+								
+			</main>
+		</section>					
 		<div id="rodaperedes">
-			<section id="roda">
+			<nav id="roda">
 				<ul>
-					<li><a href="#"><img src="img/facebook.png" border="0"></a></li>
-					<li><a href="#"><img src="img/instagram.png" border="0"></a></li>
-					<li><a href="#"><img src="img/whatsapp.png" border="0"></a></li>
+					<li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+					<li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+					<li><a href="api.whatsapp.com/send?phone=5519999999999&text=Texto%20aqui"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
 
 				</ul>			
 				
-			</section>
-			<h3>Endereço:Rua Gonçalves Dias 230, Porto Alegre, RS</h3>
+			</nav>
+			<div id="markend">
+			<a href="#"><ion-icon id="marcador" name="location-outline"></ion-icon><h3>Endereço:Rua Gonçalves Dias 230, Porto Alegre, RS</h3> </a>
+			</div>
 			</div>
 
 
@@ -70,6 +73,9 @@
 			</p>
 		</footer>
 	</div>
+
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	
 
 
