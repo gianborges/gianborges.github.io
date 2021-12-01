@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
 	<meta charset="utf-8">
 	<title>Sweet Pie - Cardápio</title>
@@ -7,33 +7,35 @@
 	<link rel="stylesheet" type="text/css" href="css/basesite.css">
 </head>
 <body>
-		<div id="principal">
+	<div id="principal">
 		<header>
-						<nav id="menu-topo">
+			<div id="grupomenu">
+				<nav id="menu-topo">
+						<ul>
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="cards.html">CARDÁPIO</a></li>
+							<li><a href="encomendas.html">ENCOMENDAS</a></li>						
+						</ul>	
+					</nav>
+					<nav id="mainredes">
 					<ul>
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="cards.html">CARDÁPIO</a></li>
-						<li><a href="encomendas.html">ENCOMENDAS</a></li>						
-					</ul>	
-				</nav>
-			<nav id="mainredes">
-				<ul>
-					<li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-					<li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-					<li><a href="api.whatsapp.com/send?phone=5519999999999&text=Texto%20aqui"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+						<li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+						<li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+						<li><a href="api.whatsapp.com/send?phone=5519999999999&text=Texto%20aqui"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
 
-				</ul>
-			</nav>
+					</ul>
+				</nav>
+			</div>
 		</header>
-		<section id="destaque"> 
+		<main id="destaque"> 
 			<h3>Cardápio</h3>
-			<main class="cards">
+			<section id="allcards">
 				<figure class="cards">
 					<div class="icon">
 						<img src="img/torta.jpg" alt="Tortas">
 						<span>Delicosas Tortas feitas com pão de ló e diversos tipos de recheio</span>
 					</div>
-					<button><a href="tortas.html">Tortas</a></button>
+					<button onclick="window.location.href='tortas.html'">Tortas</button>
 				</figure>
 					<figure class="cards">
 					<div class="icon">
@@ -71,8 +73,8 @@
 					<button>Doces</button>
 				</figure>
 				
-			</main>
-		</section>
+			</section>
+		</main>
 
 		</div>
 			<div id="rodaperedes">
@@ -85,7 +87,7 @@
 				
 			</section>
 			<div id="markend">
-			<a href="#"><ion-icon id="marcador" name="location-outline"></ion-icon><h3>Endereço:Rua Gonçalves Dias 230, Porto Alegre, RS</h3> </a>
+			<a href="https://goo.gl/maps/TvF2gu7F2xfCPYt99" target="_blank"><ion-icon id="marcador" name="location-outline"></ion-icon><h3>Endereço:Rua Gonçalves Dias 230, Porto Alegre, RS</h3></a>
 			</div>
 			</div>
 
@@ -95,7 +97,7 @@
 				Site desenvolvido por Gian Borges
 			</p>
 		</footer>
-	</div>
+	
 	
 
 

@@ -7,10 +7,16 @@ body {
 	
 	}
 #principal {
+	max-width: 1600px ;
+	min-width: 800px ;
 	width: 100%;
 }
+#grupomenu {
+ float: right;
+ margin-right: 25px;
+}
 
-header {
+header { 
 	height: 350px;
 	width: 100%;
 	background-image: url("../img/Banner3.png");
@@ -18,41 +24,51 @@ header {
 	background-size: cover;
 }
 #mainredes {
-	margin-right: 10px;
+	width: 135px;
 	margin-top: 292px;
-	float: right;
 	display: inline-block;
-	
-
 }
+
 #mainredes ul li {
 	font-size: 40px; 
 	display: inline-block;
 	list-style: none;
 }
 
-#menu-topo{
-	margin-top: 300px;
-	margin-left: 850px;
-	float: left;
-	display: inline-block;
+ion-icon {
+  color: whitesmoke;
+  transition: 0.5s;
+}
+ion-icon:hover {
+	color: #F23D5E;
+}
 
+#menu-topo {
+	width: 355px;
+	margin-top: 300px;
+	display: inline-block;
 }
 
 #menu-topo ul li {
 	display: inline-block;
-	background-color: #F2C3A7;
+	background-color: #F5574C;
 	padding: 8px 10px;
 	border-radius: 15px;
 	margin-left: 10px;
+	transition: 0.5s;
 
 }
- #menu-topo ul li a {
+#menu-topo ul li:hover{
+	background-color: #F23D5E;
+}
+#menu-topo ul li a {
  	text-decoration: none;
- 	color: #F23D5E;
+ 	color: whitesmoke;
  	font-weight: bold;
 
- 	}
+}
+
+
 
 #destaque { 
 	margin-top: 5px;

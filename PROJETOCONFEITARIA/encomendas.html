@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
 	<meta charset="utf-8">
 	<title>Sweet Pie - Tortas</title>
@@ -8,38 +8,40 @@
 	<link rel="stylesheet" type="text/css" href="css/formulario.css">
 </head>
 <body>
-		<div id="principal">
+	<div id="principal">
 		<header>
-			<nav id="menu-topo">
+			<div id="grupomenu">
+				<nav id="menu-topo">
+						<ul>
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="cards.html">CARDÁPIO</a></li>
+							<li><a href="encomendas.html">ENCOMENDAS</a></li>						
+						</ul>	
+					</nav>
+					<nav id="mainredes">
 					<ul>
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="cards.html">CARDÁPIO</a></li>
-						<li><a href="encomendas.html">ENCOMENDAS</a></li>
-						
-					</ul>	
+						<li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+						<li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+						<li><a href="api.whatsapp.com/send?phone=5519999999999&text=Texto%20aqui"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+
+					</ul>
 				</nav>
-				<nav id="mainredes">
-				<ul>
-					<li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-					<li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-					<li><a href="api.whatsapp.com/send?phone=5519999999999&text=Texto%20aqui"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
-				</ul>
-			</nav>
+			</div>
 
 		</header>
-		<section id="destaque"> 
+		<main id="destaque"> 
 			<h3>Encomendas</h3>
-			<main class="encomendas">
+			<section class="encomendas">
 				<div id="formulario">
 				<form name="formulario1" action="#" method="GET">
 					<fieldset id="dados">
 						<legend>Dados</legend>
-						<label for="nome">Nome</label>
+						<label id="nome">Nome</label>
 						<input type="text" name="nome" placeholder=" Digite">
-						<label for="telefone">Telefone</label>
+						<label id="telefone">Telefone</label>
 						<input type="tel" name="telefone" placeholder=" (51)99000-0000">
-						<label for="email">E-mail</label>
-						<input type="mail" name="email" placeholder=" exemplo@gmail.com">
+						<label id="email">E-mail</label>
+						<input type="email" name="email" placeholder=" exemplo@gmail.com">
 					</fieldset>
 					<fieldset id="produtos">
 						<legend>Produtos</legend>
@@ -47,32 +49,32 @@
 							
 							<li>
 								<input type="checkbox" name="torta">
-								<label for="tortas">Torta</label>
+								<label id="tortas">Torta</label>
 								
 							</li>
 							<li>
 								<input type="checkbox" name="bolo">
-								<label for="bolo">Bolo</label>
+								<label id="bolo">Bolo</label>
 								
 							</li>
 							<li>
 								<input type="checkbox" name="chapinha">
-								<label for="chapinha">Chapinha</label>
+								<label id="chapinha">Chapinha</label>
 								
 							</li>
 							<li>
 								<input type="checkbox" name="tortafria">	
-								<label for="tortasfria">Torta Fria</label>
+								<label id="tortasfria">Torta Fria</label>
 								
 							</li>	
 							<li>
 								<input type="checkbox" name="salgado">
-								<label for="salgado">Salgados</label>
+								<label id="salgado">Salgados</label>
 								
 							</li>	
 							<li>
 								<input type="checkbox" name="salgado">
-								<label for="doces">Doces</label>
+								<label id="doces">Doces</label>
 								
 							</li>	
 					</ul>
@@ -83,16 +85,17 @@
 				</form>
 			</div>
 			<div id="mapa">
-				<div id="icon">
 				<h4>Venha nos Visitar!</h4>
-				<p>Horário de funcionamento De segunda a sábado: das 09h às 18h</p>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.4701123279056!2d-51.222483185351265!3d-30.05205633859012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197858b9a87139%3A0xa1bccc0497ffc0f6!2sR.%20Gon%C3%A7alves%20Dias%2C%20230%20-%20Menino%20Deus%2C%20Porto%20Alegre%20-%20RS%2C%2090160-091!5e0!3m2!1spt-BR!2sbr!4v1637169670810!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				<div>
+				<div id="icon">
+					<p>Horário de funcionamento De segunda a sábado: das 09h às 18h</p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.4701123279056!2d-51.222483185351265!3d-30.05205633859012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197858b9a87139%3A0xa1bccc0497ffc0f6!2sR.%20Gon%C3%A7alves%20Dias%2C%20230%20-%20Menino%20Deus%2C%20Porto%20Alegre%20-%20RS%2C%2090160-091!5e0!3m2!1spt-BR!2sbr!4v1637169670810!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 				</div>
 			</div>
 				
-			</main>
+			</section>
 
-		</section>
+		</main>
 			<div id="rodaperedes">
 			<section id="roda">
 				<ul>
@@ -103,7 +106,7 @@
 				
 			</section>
 			<div id="markend">
-			<a href="#"><ion-icon id="marcador" name="location-outline"></ion-icon><h3>Endereço:Rua Gonçalves Dias 230, Porto Alegre, RS</h3> </a>
+			<a href="https://goo.gl/maps/TvF2gu7F2xfCPYt99" target="_blank"><ion-icon id="marcador" name="location-outline"></ion-icon><h3>Endereço:Rua Gonçalves Dias 230, Porto Alegre, RS</h3></a>
 			</div>
 			</div>
 
