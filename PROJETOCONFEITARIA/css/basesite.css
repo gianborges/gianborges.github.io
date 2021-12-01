@@ -77,6 +77,7 @@ ion-icon:hover {
 	background-color: #F25C5C;
 }
 #destaque h3 {
+	margin: 0 25%;
 	margin-top: 20px;
 	text-align: center;
 	border-radius: 8px;
@@ -87,7 +88,6 @@ ion-icon:hover {
 	text-shadow: 1px 1px 2px #F23D5E;
 	font-size: 25px;
 	text-transform: uppercase;
-	margin-left: 350px;
 
 }
 
@@ -150,6 +150,6 @@ footer {
 footer p {
 	margin-top: 5px;
 	color: #F2C3A7;
-	margin-left: 43%;
+	margin: 0 40%;
 	font-weight: bold;
 }
