@@ -69,6 +69,7 @@ ion-icon:hover {
 
 
 #destaque { 
+	height: 100%;
 	margin-top: 5px;
 	width: 100%;
 	border-top: 2px white solid;

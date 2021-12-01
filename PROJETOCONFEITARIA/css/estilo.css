@@ -26,6 +26,21 @@ figure{
 	width: 100%;
 
 }
+#quemsomos{
+	height: 300px;
+	width: 100%;
+}
+#qsomos {
+	margin-top: 10px;
+	width: 50%;
+	background-color:pink;
+	border-radius: 8px;
+	padding: 10px 60px;
+}
+#qsomos p {
+	text-align: justify;
+	font-size: 20px;
+}
 button {
 	padding: 8px 16px;
 	text-transform: uppercase;
