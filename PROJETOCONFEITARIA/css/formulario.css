@@ -1,50 +1,61 @@
 .encomendas {
 	width: 100%;
-	margin: 0;
-	
+}
+#formulario {
+	margin-top: 30px;
+	width: 62%;
 }
 
-#formulario {
-	margin-top: 50px;
-	display: inline-block;
-	width: 100%;
-}
 
 #dados { 
+	display: inline-block;
 	color: brown;
 	font-weight: bold;
 	background-color: pink;
 	border-radius: 10px;
 	border: 0;
-	float: left;
 	margin: 0;
 	width: 250px;
 	height: 240px;
 	padding: 50px;
-	margin-left: 30%;
 	box-shadow: 20px 20px 50px -30px #4B395E;
 
 }
 #produtos {
+	display: inline-block;
 	color: brown;
 	font-weight: bold;
 	background-color: pink;
 	border-radius: 10px;
 	border: 0;
 	box-shadow: 20px 20px 50px -30px #4B395E ;
-	float: right;
-	display: inline-block;
-	margin: 0;
 	width: 277px;
 	height: 240px;
 	padding: 50px;
-	display: block;
-	margin-right: 28%;
 
 }
 #produtos ul li {
 	list-style: none;
 }
+#entrega {
+	display: inline-block;
+	color: brown;
+	font-weight: bold;
+	background-color: pink;
+	border-radius: 10px;
+	border: 0;
+	box-shadow: 20px 20px 50px -30px #4B395E ;
+	width: 277px;
+	height: 240px;
+	padding: 50px;
+
+}
+#entrega input {
+	display: block;
+	margin: 5px 0;
+	width: 150px;
+}
+
 legend {
 	background: linear-gradient(to right, #9F66FF, #DFC8FF);
 	border-radius: 8px;
@@ -88,9 +99,9 @@ iframe {
 	font-weight: bold;
 }
 #botao { 
-	margin-top: 20px;
+	display: block;
+	margin-top: 10px;
 	margin-bottom: 20px;
-	margin-left: 47%;
 	padding: 8px 16px;
 	text-transform: uppercase;
 	border-radius: 32px;

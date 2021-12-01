@@ -32,16 +32,16 @@
 		<main id="destaque"> 
 			<h3>Encomendas</h3>
 			<section class="encomendas">
-				<div id="formulario">
-				<form name="formulario1" action="#" method="GET">
+
+				<form name="formulario1" action="#" method="GET" id="formulario">
 					<fieldset id="dados">
 						<legend>Dados</legend>
 						<label id="nome">Nome</label>
-						<input type="text" name="nome" placeholder=" Digite">
+						<input type="text" name="nome" placeholder=" Digite" required="">
 						<label id="telefone">Telefone</label>
-						<input type="tel" name="telefone" placeholder=" (51)99000-0000">
+						<input type="tel" name="telefone" placeholder=" (51)99000-0000" required="">
 						<label id="email">E-mail</label>
-						<input type="email" name="email" placeholder=" exemplo@gmail.com">
+						<input type="email" name="email" placeholder=" exemplo@gmail.com" required="">
 					</fieldset>
 					<fieldset id="produtos">
 						<legend>Produtos</legend>
@@ -79,11 +79,18 @@
 							</li>	
 					</ul>
 					</fieldset>
+					<fieldset id="entrega">
+						<legend>Entrega</legend>
+						<label id="data">Data</label>
+						<input type="date" name="data" required="">
+						<label id="hora">Hora</label>
+						<input type="time" name="hora" required="">
+					</fieldset>
 					<input type="submit" name="ENVIAR" id="botao">
 
 					
 				</form>
-			</div>
+		</section>
 			<div id="mapa">
 				<h4>Venha nos Visitar!</h4>
 				<div>
