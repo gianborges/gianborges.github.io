@@ -3,13 +3,12 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-body {
-	
-	}
+
 #principal {
 	max-width: 1600px ;
 	min-width: 800px ;
 	width: 100%;
+	height: auto;
 }
 #grupomenu {
  float: right;
